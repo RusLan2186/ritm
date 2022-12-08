@@ -408,9 +408,10 @@ body {
 }
 
 .main__image {
-  display: inline-block;
   margin-right: -135px;
   position: relative;
+  max-width: 672px;
+  padding-bottom: 97.6%;
 }
 .main__image::after {
   content: "";
@@ -423,11 +424,14 @@ body {
   transform: translate(0, 50%);
 }
 .main__image img {
-  max-width: 100%;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  border-radius: 0px 0px 151px 360px;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0px 0px 151px 360px;
 }
 
 .class__page__store {
